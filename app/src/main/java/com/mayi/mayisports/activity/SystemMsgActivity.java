@@ -27,7 +27,7 @@ import com.ta.utdid2.android.utils.NetworkUtils;
 import org.kymjs.kjframe.http.HttpParams;
 
 /**
- * 系统消息界面
+ * 系统消息 界面
  */
 public class SystemMsgActivity extends BaseActivity implements RequestHttpCallBack.ReLoadListener, AdapterView.OnItemClickListener {
 
