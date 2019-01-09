@@ -1,0 +1,179 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    def URL_RELEASE = "\"http://app.mayisports.com/\""  //正式环境
+    def URL_DEV = "\"http://app.mayisports.com/\""    //测试环境
+//    def URL_DEV = "\"http://192.168.1.6:3030/\""
+
+    compileSdkVersion 26
+    buildToolsVersion "25.0.2"
+
+
+
+
+
+
+    defaultConfig {
+//        applicationId "com.mayisports.qca"
+        applicationId "com.mayi.mayisports"
+        minSdkVersion 16
+        targetSdkVersion 18
+        versionCode 28 //27
+        versionName "5.7"//5.6
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+//        flavorDimensions "versionCode"
+
+        buildConfigField("String", "URL_HOST", "${URL_DEV}")
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "URL_HOST", "${URL_RELEASE}")
+        }
+    }
+
+
+    //配置数字联盟
+    packagingOptions{
+        doNotStrip "*/arm64-v8a/libdu.so"
+
+        doNotStrip "*/armeabi/libdu.so"
+        doNotStrip "*/armeabi-v7a/libdu.so"
+
+
+        doNotStrip "*/mips/libdu.so"
+        doNotStrip "*/mips64/libdu.so"
+
+        doNotStrip "*/x86/libdu.so"
+        doNotStrip "*/x86_64/libdu.so"
+    }
+
+
+    productFlavors {
+
+        inner_test {
+
+            buildConfigField "String", "APPSTORE", '"inner_test"'
+        }//内测版
+
+        yingyongbao {
+            buildConfigField "String", "APPSTORE", '"yingyongbao"'
+        }//应用宝
+        sogouzhushou {
+            buildConfigField "String", "APPSTORE", '"sogouzhushou"'
+        }//搜狗
+        baidu {
+            buildConfigField "String", "APPSTORE", '"baidu"'
+        }//百度
+        huawei {
+            buildConfigField "String", "APPSTORE", '"huawei"'
+        }//华为
+        jinli {
+            buildConfigField "String", "APPSTORE", '"jinli"'
+        }//金立
+        xiaomi {
+            buildConfigField "String", "APPSTORE", '"xiaomi"'
+        }//小米
+        nearme {
+            buildConfigField "String", "APPSTORE", '"nearme"'
+        }//oppo
+        vivo {
+            buildConfigField "String", "APPSTORE", '"vivo"'
+        }//vivo
+        m360 {
+            buildConfigField "String", "APPSTORE", '"m360"'
+        }//360
+        lenovo {
+            buildConfigField "String", "APPSTORE", '"lenovo"'
+        }//联想
+        wandoujia {
+            buildConfigField "String", "APPSTORE", '"wandoujia"'
+        }//豌豆荚
+        meizu {
+            buildConfigField "String", "APPSTORE", '"meizu"'
+        }//魅族
+        yingyonghui {
+            buildConfigField "String", "APPSTORE", '"yingyonghui"'
+        }//应用汇
+
+
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    //签名检测
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to checkforerrorsinrelease builds,
+        // but continue the build even whenerrorsarefound:
+        abortOnError false
+    }
+
+
+
+    sourceSets{
+        main{
+            jniLibs.srcDirs=['Libs']
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.1.0'
+    compile 'junit:junit:4.12'
+    compile 'com.android.support.test:runner:1.0.1'
+    compile 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //bugly
+    compile 'org.kymjs.kjframe:kjframe:2.6'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile files('libs/SocialSDK_QQZone_1.jar')
+    compile files('libs/SocialSDK_QQZone_2.jar')
+    //    compile 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
+    compile files('libs/umeng-analytics-7.4.0.jar')
+    compile files('libs/alipaySdk-20160427.jar')
+    compile files('libs/libammsdk.jar')
+    compile project(':seeImags')
+    //  compile 'com.youth.banner:banner:1.4.10'
+    compile project(':xrefresh_library')
+    compile 'com.github.chrisbanes:PhotoView:1.2.6'
+    //视频播放
+    compile 'fm.jiecao:jiecaovideoplayer:4.8.3'
+    //    compile 'fm.jiecao:jiecaovideoplayer:5.2.1'
+    //    compile 'fm.jiecao:jiecaovideoplayer:5.3'
+    //    compile 'fm.jiecao:jiecaovideoplayer:5.5'
+    //    compile 'fm.jiecao:jiecaovideoplayer:5.5.4'
+    //图片选择器
+    compile project(':matisse')
+    compile project(':PushSDK')
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    //    compile 'com.shizhefei:LargeImageView:1.1.0'
+    //    compile 'com.r0adkll:slidableactivity:2.0.6'
+    //    compile 'me.imid.swipebacklayout.lib:library:1.1.0'
+    compile project(':library')
+    compile project(':gsyvideoplayer-androidvideocache')
+    compile files('libs/du.jar')
+    compile project(':banner')
+    compile files('libs/MobCommons-2018.0614.1541.jar')
+
+
+
+    //测试视频播放器
+   // compile 'com.kk.taurus.playerbase:playerbase:3.2.9'
+
+}

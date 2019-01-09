@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coment_gray_bg"
+    tools:context="com.mayi.mayisports.activity.ReportActivity">
+   <LinearLayout
+       android:background="@color/white"
+       android:padding="10dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/tv_name_report_activity"
+           android:text="举报xxx发布的内容"
+           android:textSize="14sp"
+           android:textColor="@color/coment_black"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+       <GridView
+           android:verticalSpacing="10dp"
+           android:listSelector="@android:color/transparent"
+           android:id="@+id/gv_content_report_activity"
+           android:padding="10dp"
+           android:numColumns="2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:layout_marginBottom="5dp"
+           android:id="@+id/tv_submit_report_activity"
+           android:layout_marginTop="10dp"
+           android:textColor="@color/black_46"
+           android:gravity="center"
+           android:text="提交举报"
+           android:background="@drawable/select_score_bottom"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:padding="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+   </LinearLayout>
+    <include layout="@layout/loadinglayout"/>
+</FrameLayout>

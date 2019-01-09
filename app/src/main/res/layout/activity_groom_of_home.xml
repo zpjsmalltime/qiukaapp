@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GroomOfHomeActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.andview.refreshview.XRefreshView
+            android:background="@color/coment_gray_bg"
+            android:id="@+id/xfv_home_fg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:scrollbars="none"
+                android:dividerHeight="0.5dp"
+                android:divider="@color/base_line_color"
+                android:id="@+id/lv_home_fg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.andview.refreshview.XRefreshView>
+
+        <LinearLayout
+            android:background="@color/coment_gray_bg"
+            android:visibility="gone"
+            android:id="@+id/ll_no_data"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:src="@drawable/no_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="暂无信息"
+                android:textSize="12sp"
+                android:textColor="@color/coment_black_99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <include layout="@layout/loadinglayout"/>
+
+
+    </FrameLayout>
+</LinearLayout>

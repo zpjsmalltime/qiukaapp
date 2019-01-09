@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_count_guess_item"
+            android:layout_gravity="center_vertical"
+            android:text="1↑"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textColor="@color/black_28"
+            android:drawablePadding="5dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" >
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="25dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_head_dynamic_item"
+                    android:src="@drawable/audio"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <ImageView
+                    android:id="@+id/iv_vip_header"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/vip_coin"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/iv_red_point_header"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/cricle_shape_red"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name_guess_item"
+                android:layout_marginLeft="5dp"
+                android:text="球咖宝贝"
+                android:textSize="12sp"
+                android:textColor="@color/coment_black"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_tag_guess_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignTop="@+id/iv_vip_header"
+                    android:drawablePadding="2dp"
+                    android:gravity="center"
+                    android:text="五中五"
+                    android:textColor="@color/coment_black_99"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_per_guess_item"
+                android:text="108.6%"
+                android:textSize="14sp"
+                android:textColor="@color/coment_black"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price_guess_item"
+                android:text="￥150"
+                android:textSize="16sp"
+                android:textColor="@color/red_"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+</LinearLayout>

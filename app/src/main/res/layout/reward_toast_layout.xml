@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black_50_alpha"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_">
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="鼓励一下"
+            android:textColor="@color/coment_black"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/gv_reward"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <View android:layout_width="match_parent"
+            android:background="@color/coment_gray_bg"
+            android:layout_height="0.5dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv"
+                android:text="余额："
+                android:textSize="13sp"
+                android:textColor="@color/coment_black_99"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_balance_reward"
+                android:layout_toRightOf="@+id/tv"
+                android:text="0.0金币"
+                android:textSize="13sp"
+                android:textColor="@color/coment_black"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_ok_reward"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/select_score_bottom"
+                android:layout_alignParentRight="true"
+                android:text="打赏"
+                android:textSize="13sp"
+                android:textColor="@color/coment_black"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

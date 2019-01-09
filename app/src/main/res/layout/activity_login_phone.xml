@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/white"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LoginActivity">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_left_title_"
+            android:src="@drawable/gray_left_back"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/login_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:text="手机号快捷登录"
+            android:textSize="25sp"
+            android:textColor="@color/coment_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="未注册过的手机号将自动创建球咖账号"
+            android:textSize="12sp"
+            android:textColor="@color/coment_black_99"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:maxLength="11"
+                android:inputType="phone"
+                android:id="@+id/et_number_login"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:drawablePadding="10dp"
+                android:paddingRight="10dp"
+                android:hint="请输入手机号"
+                android:textColor="#464646"
+                android:textSize="14sp"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/tv_delete_num_login"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delete_circle" />
+
+
+            <TextView
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/tv_send_code_login"
+                android:layout_marginRight="10dp"
+                android:text="发送验证码"
+                android:textSize="12sp"
+                android:textColor="@drawable/send_code_select"
+                android:gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/base_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:maxLength="4"
+                android:inputType="number"
+                android:id="@+id/et_code_login"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:drawablePadding="10dp"
+                android:hint="请输入验证码"
+                android:textColor="#464646"
+                android:textSize="14sp"
+
+                android:background="@drawable/empty"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/base_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_login_login"
+            android:background="@drawable/select_score_bottom"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="14sp"
+            android:text="登录"
+            android:gravity="center"
+            android:textColor="@color/coment_black"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="我同意《球咖用户协议》"
+                android:textSize="11sp"
+                android:textColor="#999999"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_unlogin_login"
+                android:padding="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="游客模式"
+                android:textSize="12sp"
+                android:textColor="#62AFEF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:text="其他登录方式"
+            android:textColor="@color/black_66"
+            android:textSize="14sp"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:padding="15dp"
+                android:src="@drawable/weixin_icon_login"
+                android:id="@+id/iv_weixin_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:padding="15dp"
+                android:src="@drawable/weibo_icon_login"
+                android:id="@+id/iv_weibo_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:padding="15dp"
+                android:src="@drawable/qq_icon_login"
+                android:id="@+id/iv_qq_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/loadinglayout"/>
+</FrameLayout>

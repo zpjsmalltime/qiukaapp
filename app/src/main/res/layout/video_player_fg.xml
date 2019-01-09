@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer"
+    tools:context="com.mayi.mayisports.activity.VideoPlayerActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mayisports.qca.view.JieCaoPlayer
+        android:id="@+id/jc_player_fg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/video_cover"/>
+
+    <View
+        android:rotation="180"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/video_cover"/>
+
+    <View
+        android:id="@+id/v_video_click_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_top_click"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="32dp"
+                android:layout_height="32dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_head_dynamic_item"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                <ImageView
+                    android:id="@+id/iv_vip_header"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/vip_coin"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/iv_red_point_header"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/cricle_shape_red"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/tv_name_item"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                android:textColor="@color/white_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/tv_create_time_item"
+                    android:text="司妈解盘"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/white_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:id="@+id/iv_dot_more_item"
+            android:padding="10dp"
+            android:src="@drawable/dot_more_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iv_back_item"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+
+            android:src="@drawable/delet_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_content_item"
+            android:text=""
+            android:layout_marginRight="90dp"
+            android:textSize="14sp"
+            android:textColor="@color/white_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_dynamic_item"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_thumbup_topic_item"
+                android:drawablePadding="5dp"
+                android:text="0"
+                android:textColor="@color/white_"
+                android:drawableTop="@drawable/thumbup_no_video_player"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_comments_topic_item"
+                android:drawablePadding="5dp"
+                android:text="评论"
+                android:textColor="@color/white_"
+                android:drawableTop="@drawable/comments_video_player"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_share_topic_item"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/share_video_player"
+                android:drawablePadding="5dp"
+                android:text="分享"
+                android:textColor="@color/white_"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.mayisports.qca.view.MyProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_video_player_fg"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_color_video_tran" />
+    <ProgressBar
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:visibility="visible"
+        android:id="@+id/pb_video_player_fg"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_color_video" />
+
+</RelativeLayout>
+
+
+    <FrameLayout
+        android:clickable="true"
+        android:background="@color/white_"
+        android:id="@+id/fl_right_video_player_ac"
+        android:layout_gravity="right"
+        android:tag="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</android.support.v4.widget.DrawerLayout>

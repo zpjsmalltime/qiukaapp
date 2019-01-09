@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stand_bg_color">
+
+
+    <ru.truba.touchgallery.GalleryWidget.GalleryViewPager
+        android:visibility="gone"
+        android:id="@+id/gvp_pic_show"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <com.mayisports.qca.view.ViewPagerFix
+        android:background="#272B2E"
+        android:id="@+id/vp_pic_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <ImageView
+        android:id="@+id/iv_download_pic_show_acitivity"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/download_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:progressDrawable="@drawable/progress_color"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="1"
+        android:indeterminate="false"
+        android:id="@+id/pb_save_img"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</RelativeLayout>

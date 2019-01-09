@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/coment_gray_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activity.PublishPointActivity">
+
+        <EditText
+            android:maxLength="10"
+            android:id="@+id/et_edit_nickname"
+            android:gravity="start"
+            android:textColor="@color/coment_black"
+            android:hint="昵称"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideInset"
+            android:textSize="14sp"
+            android:background="@drawable/empty_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+     <TextView
+         android:text="昵称不超过10个字符,在30天内只能修改一次,且不包含敏感词汇！"
+         android:textColor="@color/coment_black_99"
+         android:textSize="12sp"
+         android:padding="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <include layout="@layout/loadinglayout"/>
+</FrameLayout>

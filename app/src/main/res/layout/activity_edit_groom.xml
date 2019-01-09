@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/fl_view_root"
+    tools:context=".activity.EditGroomActivity">
+<ScrollView
+    android:fillViewport="true"
+    android:scrollbarSize="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <RelativeLayout
+         android:padding="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_centerInParent="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_host_name_edit_groom"
+                    android:text="阿加"
+                    android:textColor="@color/coment_black"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="vs"
+                    android:textColor="@color/coment_black_99"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_away_name_edit_groom"
+                    android:text="阿加"
+                    android:textColor="@color/coment_black"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+             <TextView
+                 android:id="@+id/tv_time_edit_groom"
+                 android:layout_marginTop="10dp"
+                 android:layout_gravity="center_horizontal"
+                 android:text="明天10:10"
+                 android:textColor="@color/coment_black_99"
+                 android:textSize="13sp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+         </LinearLayout>
+
+         <TextView
+             android:id="@+id/tv_match_edit_groom"
+             android:text="意甲"
+             android:textSize="14sp"
+             android:textColor="@color/red_"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+     </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:background="@color/coment_gray_bg"
+            android:layout_height="5dp"/>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:padding="10dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/coment_black_shape"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:textStyle="bold"
+                android:text="推荐内容"
+                android:textColor="@color/coment_black"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+       <View android:layout_height="0.5dp"
+           android:background="@color/base_line_color"
+           android:layout_width="match_parent"/>
+
+
+        <include layout="@layout/europe_layout"/>
+
+        <include layout="@layout/asia_layout"/>
+
+        <include layout="@layout/scroe_layout"/>
+
+        <TextView
+           android:paddingTop="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/tv_no_pan"
+            android:text="这场比赛暂时无可用的推荐盘口"
+            android:textColor="@color/coment_black_99"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:background="@color/coment_gray_bg"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_plus_edit_groom"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/coment_black_shape"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:textStyle="bold"
+                android:text="推荐售价"
+                android:textColor="@color/coment_black"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_icon_edit_groom"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arri_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_coin_edit_groom"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0.5dp"
+                android:background="@color/base_line_color"
+                android:layout_width="match_parent"/>
+
+            <com.mayisports.qca.view.NestingGridViewInScrollView
+                android:id="@+id/gv_edit_groom"
+                android:padding="5dp"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                android:numColumns="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+         <CheckBox
+             android:layout_marginLeft="5dp"
+             android:button="@drawable/select_cb"
+             android:id="@+id/cb_edit_groom"
+             android:padding="5dp"
+             android:text=" 不中退款"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/coment_gray_bg"
+            android:layout_height="5dp"/>
+
+
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:padding="10dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/coment_black_shape"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:textStyle="bold"
+                android:text="推荐理由"
+                android:textColor="@color/coment_black"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:layout_height="0.5dp"
+            android:background="@color/base_line_color"
+            android:layout_width="match_parent"/>
+
+          <EditText
+              android:id="@+id/et_edit_groom"
+              android:maxLength="25"
+              android:padding="10dp"
+              android:hint="标题，会展示为未购买的的用户"
+              android:textColor="@color/black_28"
+              android:textSize="14sp"
+              android:background="@drawable/empty_white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="0.5dp"
+            android:background="@color/base_line_color"
+            android:layout_width="match_parent"/>
+
+        <EditText
+            android:id="@+id/et_content_edit_groom"
+            android:scrollbars="vertical"
+            android:gravity="start"
+            android:padding="10dp"
+            android:hint="内容，有分析内容的推荐单更受买家欢迎"
+            android:textColor="@color/black_28"
+            android:textSize="14sp"
+            android:background="@drawable/empty_white"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/coment_gray_bg"
+            android:layout_height="5dp"/>
+        <CheckBox
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/select_cb"
+            android:id="@+id/cb_share_groom"
+            android:padding="5dp"
+            android:text="同步至我的动态"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/coment_gray_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_submit_edit_groom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="发布推荐"
+                android:gravity="center"
+                android:background="@drawable/select_score_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="推荐规则"
+                android:textSize="14sp"
+                android:textColor="@color/coment_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                 android:layout_marginBottom="15dp"
+                android:text="1.每周一，二，三最多推荐5场，其余时间最多推荐8场；\n2.每个推荐最高价格不得超过500金币；\n3.标题内容不得超过50个字符；\n4.禁止发布任何反动，暴力，色情和政治相关的内容。"
+                android:textSize="13sp"
+                android:textColor="@color/coment_black_99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+    <include layout="@layout/loadinglayout"/>
+</FrameLayout>

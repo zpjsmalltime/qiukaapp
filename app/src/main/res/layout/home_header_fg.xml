@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/coment_gray_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/id_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="115dp" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll_bar_home_header"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rb_0_home_fg"
+            android:textSize="@dimen/rb_text_size"
+            android:textColor="@drawable/mine_textcolor_selecter"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/home_top_1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="免费竞猜"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/rb_1_home_fg"
+            android:textSize="@dimen/rb_text_size"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/infor_icon"
+            android:textColor="@drawable/mine_textcolor_selecter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="情报站"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/rb_2_home_fg"
+            android:textSize="@dimen/rb_text_size"
+            android:drawablePadding="5dp"
+            android:textColor="@drawable/mine_textcolor_selecter"
+            android:button="@null"
+            android:drawableTop="@drawable/dingyue"
+            android:gravity="center"
+            android:text="订阅"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/rb_3_home_fg"
+            android:textSize="@dimen/rb_text_size"
+            android:drawablePadding="5dp"
+            android:textColor="@drawable/mine_textcolor_selecter"
+            android:button="@null"
+            android:drawableTop="@drawable/home_top_3"
+            android:gravity="center"
+            android:text="足球数据"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/rb_4_home_fg"
+            android:textSize="@dimen/rb_text_size"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/groom_home"
+            android:textColor="@drawable/mine_textcolor_selecter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="专家推荐"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_top_container_home"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/ll_more_count"
+            android:padding="10dp"
+             android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_more_count_home"
+                android:text="更多5场  >"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/coment_black"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/tv_more_count_home"
+                android:src="@drawable/arrow_right"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+           android:layout_marginRight="6dp"
+            android:background="@drawable/coment_black_shape"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textStyle="bold"
+            android:text="推荐"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

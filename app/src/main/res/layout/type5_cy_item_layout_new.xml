@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/rl_root"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="53dp"
+        android:layout_height="53dp">
+        <ImageView
+            android:id="@+id/iv_header_item"
+            android:layout_width="53dp"
+            android:layout_height="53dp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_vip_item"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/vip_coin"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:id="@+id/tv_name_item"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textSize="12sp"
+        android:textColor="@color/coment_black"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_tag_item"
+        android:layout_marginTop="2dp"
+        android:text="name"
+        android:textSize="13sp"
+        android:textColor="@color/coment_black_99"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_follow_item"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/select_score_item"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="关注"
+        android:textColor="@drawable/select_score_text_item"
+        android:textSize="13sp" />
+
+</LinearLayout>

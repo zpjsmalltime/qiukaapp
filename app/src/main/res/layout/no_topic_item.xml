@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="110dp">
+    <TextView
+        android:text="快来评论一下吧！"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:paddingTop="40dp"
+        android:textColor="@color/coment_black_99"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingBottom="40dp"
+        android:layout_height="110dp" />
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="53dp"
+        android:layout_height="53dp">
+        <ImageView
+            android:id="@+id/iv_header_item"
+            android:layout_width="53dp"
+            android:layout_height="53dp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_vip_item"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/vip_coin"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/coment_black"
+            android:textSize="17sp" />
+
+
+        <TextView
+
+            android:id="@+id/tv_reason_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="@color/coment_black_99"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/tv_follow_item"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/select_score_item"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="关注"
+        android:textColor="@drawable/select_score_text_item"
+        android:textSize="15sp" />
+</LinearLayout>

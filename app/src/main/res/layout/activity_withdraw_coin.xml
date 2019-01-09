@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/white_"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/coment_gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="可提现金币"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_balance_coin"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="0"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="提现金额"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:maxLength="5"
+            android:singleLine="true"
+            android:inputType="number"
+            android:id="@+id/et_withdraw_count"
+            android:hint="不少于20元"
+            android:background="@drawable/empty_white"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="提现支付宝"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:maxLength="50"
+            android:singleLine="true"
+            android:id="@+id/et_number_withdraw"
+            android:hint="请输入支付宝号/手机号"
+            android:background="@drawable/empty_white"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="真实姓名"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:maxLength="10"
+            android:singleLine="true"
+            android:id="@+id/et_name_withdraw"
+            android:hint="请输入真实姓名"
+            android:background="@drawable/empty_white"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_withdraw_coin"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:layout_marginTop="25sp"
+        android:gravity="center"
+        android:text="立即提现"
+        android:background="@drawable/select_score_bottom"
+        android:textColor="@color/coment_black"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:lineSpacingMultiplier="1.1"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_toast_coin"
+        android:layout_marginTop="15dp"
+        android:text="提现说明:\n1.提现金额不得小于20金币;\n2.提现于每周四统一打款;\n3.可提现金额为出售方案及活动奖励的金币;\n4.如有问题,请添加微信“mayisports”联系解决; "
+        android:textColor="@color/coment_black_99"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <include layout="@layout/loadinglayout"/>
+</FrameLayout>

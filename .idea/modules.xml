@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/banner/banner.iml" filepath="$PROJECT_DIR$/banner/banner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gsyvideoplayer-androidvideocache/gsyvideoplayer-androidvideocache.iml" filepath="$PROJECT_DIR$/gsyvideoplayer-androidvideocache/gsyvideoplayer-androidvideocache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matisse/matisse.iml" filepath="$PROJECT_DIR$/matisse/matisse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qiuca.iml" filepath="$PROJECT_DIR$/qiuca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seeImags/seeImags.iml" filepath="$PROJECT_DIR$/seeImags/seeImags.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xrefresh_library/xrefresh_library.iml" filepath="$PROJECT_DIR$/xrefresh_library/xrefresh_library.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_top_item"
+        android:textColor="@color/coment_black_99"
+        android:text="搜索记录"
+        android:textSize="13sp"
+        android:background="@color/coment_gray_bg"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <ImageView
+           android:scaleType="fitCenter"
+           android:id="@+id/iv_left_item"
+           android:src="@drawable/search_history"
+           android:layout_width="15dp"
+           android:layout_height="15dp" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_value_item"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:text="巴萨"
+            android:textSize="15sp"
+            android:textColor="@color/black_28"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/iv_rigth_item"
+            android:src="@drawable/search_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+</LinearLayout>

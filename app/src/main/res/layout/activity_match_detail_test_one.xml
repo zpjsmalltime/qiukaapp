@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/match_detail_title_layout"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<com.mayisports.qca.view.MyScrollView-->
+        <!--android:fillViewport="true"-->
+        <!--android:id="@+id/sv"-->
+        <!--android:background="@color/coment_gray_bg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+
+        <!--</com.mayisports.qca.view.MyScrollView>-->
+
+
+
+        <com.mayisports.qca.view.MyLinearLayout
+            android:id="@+id/my_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_top_title_match_detail"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:background="@drawable/match_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:id="@+id/ll_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_host_rank_match_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/bg_gray"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_host_icon_match_detail"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/host_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_host_name_match_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:singleLine="true"
+                            android:text="主队"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_center_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/tv_center_top_match_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/tv_cent_bottom_match_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_live_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/watch_live"
+                            android:gravity="center"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_away_rank_match_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/bg_gray"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_away_icon_match_detail"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/away_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_away_name_match_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:singleLine="true"
+                            android:text="客队"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/coment_gray_bg" />
+
+                <include layout="@layout/match_top_detail" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_groom_match_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/coment_gray_bg"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/no_topic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="暂无推荐"
+                        android:textColor="@color/coment_black_99"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black3"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="精选推荐"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ListView
+                    android:id="@+id/lv_match_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:divider="@color/coment_gray_bg"
+                    android:dividerHeight="0.5dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/fl_webview_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--<WebView-->
+
+                    <!--android:id="@+id/wv_match_detail"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+
+                    <com.mayisports.qca.view.NewWebView
+
+                        android:id="@+id/wv_match_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </FrameLayout>
+
+                <include layout="@layout/match_webview_load_layout" />
+
+
+
+
+
+            </FrameLayout>
+
+
+
+        </com.mayisports.qca.view.MyLinearLayout>
+        <include layout="@layout/loadinglayout"/>
+    </FrameLayout>
+</LinearLayout>

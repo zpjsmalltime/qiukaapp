@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+     <LinearLayout
+         android:background="@color/black_dd"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <ImageView
+             android:id="@+id/iv_logo"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:layout_marginLeft="20dp"
+             android:layout_width="25dp"
+             android:layout_height="25dp" />
+         <TextView
+             android:id="@+id/tv_name"
+             android:text="主队名称"
+             android:textColor="@color/black_28"
+             android:textSize="13sp"
+             android:layout_marginLeft="10dp"
+             android:layout_gravity="center_vertical"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/base_line_color"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:background="@color/coment_gray_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv0"
+            android:text=""
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:text="已赛"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:text="胜"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv4"
+            android:text="平"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv5"
+            android:text="负"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv6"
+            android:text="得/失"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv7"
+            android:text="净"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv8"
+            android:text="积分"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv9"
+            android:text="排名"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv10"
+            android:text="胜率"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/base_line_color"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv0_0"
+            android:text="总"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv1_0"
+            android:text="已赛"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv3_0"
+            android:text="胜"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv4_0"
+            android:text="平"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv5_0"
+            android:text="负"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv6_0"
+            android:text="得/失"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv7_0"
+            android:text="净"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv8_0"
+            android:text="积分"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv9_0"
+            android:text="排名"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv10_0"
+            android:text="胜率"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/base_line_color"
+        android:layout_height="0.5dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_host"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv0_1"
+            android:text="主"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv1_1"
+            android:text="已赛"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv3_1"
+            android:text="胜"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv4_1"
+            android:text="平"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv5_1"
+            android:text="负"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv6_1"
+            android:text="得/失"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv7_1"
+            android:text="净"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv8_1"
+            android:text="积分"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv9_1"
+            android:text="排名"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv10_1"
+            android:text="胜率"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/base_line_color"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_away"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv0_2"
+            android:text="客"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv1_2"
+            android:text="已赛"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv3_2"
+            android:text="胜"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv4_2"
+            android:text="平"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv5_2"
+            android:text="负"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv6_2"
+            android:text="得/失"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv7_2"
+            android:text="净"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv8_2"
+            android:text="积分"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv9_2"
+            android:text="排名"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv10_2"
+            android:text="胜率"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/base_line_color"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/ll_no_pan"
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_bottom_home_item"
+            android:text="欧罗吧·明02:20·亚盘·30币"
+            android:textColor="@color/coment_black_99"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#464646"
+            android:textSize="9sp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="已购"
+            android:id="@+id/iv_buy"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/live_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+<View
+android:layout_width="match_parent"
+android:layout_height="7dp"/>
+</LinearLayout>

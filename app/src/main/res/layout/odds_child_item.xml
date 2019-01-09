@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/base_line_color"/>
+<LinearLayout
+    android:gravity="center"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="沙巴"
+        android:textColor="@color/black_28"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <View android:layout_height="match_parent"
+        android:layout_width="0.5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/base_line_color"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="初盘"
+            android:textColor="@color/black_28"
+            android:textSize="11sp"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:text="即盘"
+            android:textColor="@color/black_28"
+            android:textSize="11sp"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_top1"
+            android:text="sdfdsf"
+            android:textColor="@color/black_28"
+            android:textSize="11sp"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bottom1"
+            android:layout_marginTop="4dp"
+            android:text="主胜"
+            android:textColor="@color/black_28"
+            android:textSize="11sp"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_top2"
+            android:text="sdfdsf"
+            android:textColor="@color/black_28"
+            android:textSize="11sp"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bottom2"
+            android:layout_marginTop="4dp"
+            android:text="主胜"
+            android:textColor="@color/black_28"
+            android:textSize="11sp"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_top3"
+            android:text="sdfdsf"
+            android:textColor="@color/black_28"
+            android:textSize="11sp"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bottom3"
+            android:layout_marginTop="4dp"
+            android:text="主胜"
+            android:textColor="@color/black_28"
+            android:textSize="11sp"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:src="@drawable/arrow_right"
+        android:text=""
+        android:textColor="@color/black_28"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_weight="0.6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</LinearLayout>

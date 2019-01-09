@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/coment_gray_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white_"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        >
+
+
+        <EditText
+            android:id="@+id/et_publish_point"
+            android:gravity="start"
+            android:textColor="@color/coment_black"
+            android:hint="写下你的评论"
+            android:maxLength="140"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideInset"
+            android:textSize="14sp"
+            android:background="@drawable/empty_white"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="9dp"
+            android:button="@drawable/comment_checkbox_btn"
+            android:checked="false"
+            android:id="@+id/cb_share_center"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp"
+            android:text="同步到我的动态"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:background="#EFF0F4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="25dp"
+                android:id="@+id/iv_link_topic"
+                android:src="@drawable/bottom_topic_icon"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+
+                android:visibility="invisible"
+                android:src="@drawable/bottom_expression_icon"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"/>
+            <TextView
+
+                android:id="@+id/tv_text_limit_count"
+                android:text="140"
+                android:textSize="14sp"
+                android:textColor="#767676"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/loadinglayout_nobg"/>
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_real_title"
+    android:visibility="gone"
+    android:background="#272B2E"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:id="@+id/iv_left_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_left"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp"
+        />
+
+
+
+
+    <TextView
+
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_title1"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="title"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/iv_right1_title1"
+            android:layout_margin="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/weibo_personal_icon"
+            />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:id="@+id/iv_right_title1"
+            android:layout_margin="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/share_icon"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="动图"
+        android:layout_alignParentBottom="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_gif_icon"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/blue_gif_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_score_top_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                   >
+
+
+                    <TextView
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:id="@+id/tv_immediate_score_fg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/immediate_score_fg"
+                        android:textColor="@color/score_black_top_title"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_result_score_fg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/result_score_fg"
+                        android:textColor="@color/score_gray_top_title"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tv_process_score_fg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/process_score_fg"
+                        android:textColor="@color/score_gray_top_title"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_focus_score_fg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/focus_score_fg"
+                        android:textColor="@color/score_gray_top_title"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+
+                        android:id="@+id/iv_immediate_score_fg"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_weight="1"
+                        android:background="@color/score_top_title_line" />
+
+
+                    <View
+
+                        android:id="@+id/iv_result_score_fg"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_weight="1"
+                        android:background="@color/score_top_title_line"
+                        android:visibility="invisible" />
+
+                    <View
+
+                        android:id="@+id/iv_process_score_fg"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_weight="1"
+                        android:background="@color/score_top_title_line"
+                        android:visibility="invisible" />
+                    <View
+
+                        android:id="@+id/iv_focus_score_fg"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_weight="1"
+                        android:background="@color/score_top_title_line"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>

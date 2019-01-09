@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black_50_alpha"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_shape_stroke">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_content_toast_price"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="提示信息"
+            android:layout_gravity="center"
+            android:textColor="@color/coment_black"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/base_line_color"/>
+        <LinearLayout
+            android:id="@+id/ll_notinchina_main"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_cancle_toast_price"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="14sp"
+                android:textColor="@color/coment_black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="14sp"
+                android:id="@+id/tv_go_toast_price"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+                android:text="确定"
+                android:gravity="center"
+                android:background="@drawable/yellow_right_bottom_bg"
+                android:textColor="@color/coment_black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

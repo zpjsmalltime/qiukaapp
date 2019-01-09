@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:gravity="center"
+    android:background="@color/coment_gray_bg"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:background="@drawable/shape_black_stroke"
+        android:padding="0.5dp"
+        android:src="@drawable/defluat_header_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/tv_upload"
+        android:textColor="@color/black_46"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_black_stroke"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:text="上传"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    <RelativeLayout
+        android:clickable="true"
+        android:visibility="gone"
+        android:id="@+id/rl_load_webview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/pb_load"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progressbar"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_reload"
+            android:gravity="center"
+            android:text="加载失败点击重试"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</FrameLayout>

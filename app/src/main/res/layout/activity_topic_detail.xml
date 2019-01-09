@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.mayisports.qca.view.JCaoStrandPlayer
+        android:visibility="gone"
+        android:id="@+id/player_video"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_back"
+        android:padding="10dp"
+        android:src="@drawable/back_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_dot_more"
+        android:padding="10dp"
+        android:src="@drawable/dot_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <com.andview.refreshview.XRefreshView
+            android:background="@color/coment_gray_bg"
+            android:id="@+id/xfv_topic_detail_activity"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <ListView
+            android:scrollbars="none"
+            android:id="@+id/lv_topic_detail_activity"
+            android:divider="@color/coment_gray_bg"
+            android:dividerHeight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+        </com.andview.refreshview.XRefreshView>
+
+        <FrameLayout
+
+            android:id="@+id/fl_btn_topic_item"
+            android:background="#FFD41D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawablePadding="5dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/topic_release_icon"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="参与讨论"
+                android:textColor="@color/coment_black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:background="@color/transparent"-->
+        <!--android:clickable="true"-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/rl_load_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<ProgressBar-->
+            <!--android:id="@+id/pb_load"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:indeterminateDrawable="@drawable/progressbar"/>-->
+        <!--<TextView-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/tv_reload"-->
+            <!--android:gravity="center"-->
+            <!--android:text="加载失败点击重试"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+    <!--</RelativeLayout>-->
+
+    <include layout="@layout/loadinglayout"/>
+
+    <include layout="@layout/net_error_layout"/>
+</FrameLayout>
+</LinearLayout>

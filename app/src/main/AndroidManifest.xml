@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mayi.mayisports">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- shareSDK -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- bugly -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 友盟统计 -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 微信,支付宝 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".QCaApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 配置图片显示质量Glide -->
+        <!-- <meta-data android:name="com.mayisports.qca.utils.GlideConfiguration" -->
+        <!-- android:value="GlideModule"/> -->
+
+        <!--适配全面-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <!-- 友盟 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a2fa628b27b0a20c100012f" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <!-- 友盟推送 -->
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="78b5a152d8f0d8b24d1fc6a8d017048f" />
+
+        <activity android:name=".MainActivity">
+
+            <!-- 网页跳转 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mayisports.com"
+                    android:scheme="mayisports" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SelectScoreActivity" />
+        <activity android:name=".activity.ScroeDetailActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.WebViewActivtiy"
+
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            />
+        <activity android:name=".activity.HomeItemDetailActivity" />
+        <activity android:name=".activity.PersonalDetailActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.ReplayActivity" />
+        <activity android:name=".activity.AboutMeActivity" />
+        <activity android:name=".activity.CoinDetailActivity" />
+        <activity android:name=".activity.MatchDetailActivity" />
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <!-- 支付宝 -->
+
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!-- 微信支付 -->
+
+        <activity android:name=".activity.PicShowActivity" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent101468107" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--
+             AuthorizeAdapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter
+             的类，这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。
+             开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+
+        </activity>
+
+
+        <!--微信登录回调-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".activity.GIFActivity" />
+        <activity android:name=".activity.InforPostActivity" />
+        <activity android:name=".activity.IntelligentBallSelectionActivity" />
+        <activity android:name=".activity.GuessingCompetitionActivity" />
+        <activity android:name=".activity.GroomOfHomeActivity" />
+        <activity android:name=".activity.TopicDetailActivity"
+            />
+        <activity android:name=".activity.PublishPointActivity"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity android:name=".activity.ComentsDetailsActivity"
+            />
+        <activity android:name=".activity.ReplayCommentsActivity" />
+        <activity android:name=".activity.SystemMsgActivity" />
+        <activity android:name=".activity.PublishGroomActivity" />
+        <activity android:name=".activity.EditGroomActivity" />
+        <activity android:name=".activity.MutiTypeHomeActivity" />
+        <activity android:name=".activity.PublishSuccessGroomActivity" />
+        <activity android:name=".activity.GroomPersonalActivity" />
+        <activity android:name=".activity.MyFollowerListActivity" />
+        <activity
+            android:name=".activity.SearchInfosActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".activity.SetPrefrencesActivity" />
+        <activity android:name=".activity.SearchTopicActivity" />
+        <activity android:name=".activity.FansListActivity" />
+        <activity android:name=".activity.MyGroomListActivity" />
+        <activity android:name=".activity.WithdrawCoinActivity" />
+        <activity android:name=".activity.ReportActivity" />
+        <activity android:name=".activity.CollectionActivity" />
+        <activity
+            android:name=".activity.VideoPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/VideoPlayerTheme" />
+        <activity android:name=".activity.MyInfoActivity" />
+        <activity android:name=".activity.EditNicknameActivity" />
+        <activity android:name=".activity.EditSignActivity" />
+        <activity android:name=".activity.CustomBarActivity" />
+        <activity android:name=".activity.ChangePhoneActivity"></activity>
+        <activity android:name=".activity.ChangePhoneNumberActivity"></activity>
+        <activity android:name=".activity.BindPhoneNumActivity"></activity>
+        <activity android:name=".activity.PhoneLoginActivity"></activity>
+        <activity android:name=".activity.CoinListActivity"></activity>
+        <activity android:name=".activity.UpdateHeaderActivity"></activity>
+        <activity android:name=".activity.WithdrawSuccessActivity"></activity>
+        <activity android:name=".activity.OddsDetailActivity"></activity>
+        <activity android:name=".activity.ReplyDetailsActivity"></activity>
+        <activity android:name=".activity.ShareComentsDetailsActivity"></activity>
+    </application>
+
+</manifest>

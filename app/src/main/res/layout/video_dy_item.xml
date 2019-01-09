@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:visibility="gone"
+    android:paddingBottom="5dp"
+    android:id="@+id/ll_video_dy_item"
+    android:background="@color/white_"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.mayisports.qca.view.JCaoStrandPlayer
+            android:id="@+id/player_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/black_30_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_video_title_item"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="视频标题"
+            android:textColor="@color/white_"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_top_click_video"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_head_dynamic_item_video"
+                    android:src="@drawable/audio"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:id="@+id/iv_vip_header_video"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/vip_coin"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/iv_red_point_header_video"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/cricle_shape_red"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_name_dynamic_item_video"
+                android:text="司妈解盘"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black_46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ll_bottom_dynamic_item_video"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+             <TextView
+                 android:layout_marginRight="13dp"
+                android:id="@+id/tv_share_topic_item_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/item_share"
+                android:drawablePadding="5dp"
+                android:text="   "
+                android:textColor="@color/black_46"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_marginRight="15dp"
+                android:id="@+id/tv_comments_topic_item_video"
+                android:drawablePadding="5dp"
+                android:text="评论"
+                android:textColor="@color/black_46"
+                android:drawableLeft="@drawable/comments_icon"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_thumbup_topic_item_video"
+                android:drawablePadding="5dp"
+                android:text="0"
+                android:textColor="@color/black_46"
+                android:drawableLeft="@drawable/thumb_small"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mayisports.qca.view.MyFrameLayout
+    android:id="@+id/view_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.WebViewActivtiy">
+
+    <WebView
+
+        android:id="@+id/cwv_webview_actvtivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <include layout="@layout/loadinglayout"/>
+    <include layout="@layout/net_error_layout"/>
+    <include
+        android:id="@+id/title_top"
+        layout="@layout/web_view_title_layout"/>
+</com.mayisports.qca.view.MyFrameLayout>

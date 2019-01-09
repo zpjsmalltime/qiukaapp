@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/coment_gray_bg"/>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/ll_click_ry_item"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/coment_black_shape"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textStyle="bold"
+            android:text="可能感兴趣的人"
+            android:textColor="@color/coment_black"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+          <TextView
+              android:layout_gravity="center_vertical"
+              android:layout_marginRight="3dp"
+              android:textColor="@color/black_B3B4B9"
+              android:textSize="12sp"
+              android:text="更多"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="1dp"
+            android:id="@+id/iv_icon_edit_groom"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

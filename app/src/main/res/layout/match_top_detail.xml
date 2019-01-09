@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_score_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:id="@+id/tv_groom_match_detail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="推荐"
+                android:textColor="@color/score_gray_top_title"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:id="@+id/tv_analyes_match_detail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="分析"
+                android:textColor="@color/score_gray_top_title"
+                android:textSize="16sp" />
+            <TextView
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:id="@+id/tv_price_match_detail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="赔率"
+                android:textColor="@color/score_gray_top_title"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:id="@+id/tv_outs_match_detail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="赛况"
+                android:textColor="@color/score_gray_top_title"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:id="@+id/tv_qingbao_match_detail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="情报"
+                android:textColor="@color/score_gray_top_title"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:visibility="invisible"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/iv_groom_match_detail"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_card_shape" />
+
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/iv_analyes_match_detail"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_card_shape"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/iv_price_match_detail"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_card_shape"
+                android:visibility="invisible" />
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/iv_outs_match_detail"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_card_shape"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"
+                android:id="@+id/iv_qingbao_match_detail"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_card_shape" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

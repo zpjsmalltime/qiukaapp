@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="55dp"
+            android:layout_height="55dp">
+            <ImageView
+                android:id="@+id/iv_header_item"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_vip_item"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/vip_coin"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@color/coment_black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_reason_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="name"
+                android:textColor="@color/coment_black_99"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_price_header"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.5元"
+                android:textColor="@color/red_"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="总金额"
+                android:textColor="@color/coment_black_99"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="期数"
+            android:textColor="@color/coment_black_99"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="排名"
+            android:textColor="@color/coment_black_99"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="回报率"
+            android:textColor="@color/coment_black_99"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="奖金(元)"
+            android:textColor="@color/coment_black_99"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

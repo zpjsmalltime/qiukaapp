@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white_"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="答题奖金"
+                android:textColor="@color/black_28"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:text="20180101"
+                android:textColor="@color/coment_black_99"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_marginRight="15dp"
+            android:textStyle="bold"
+            android:text="-60"
+            android:textColor="@color/black_28"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:background="@color/base_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>

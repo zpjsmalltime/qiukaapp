@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black_50_alpha"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginBottom="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/corners_shape_stroke">
+
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="选择期数"
+
+            android:textColor="@color/black_75_alpha"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <ImageView
+                android:padding="10dp"
+
+                android:layout_alignParentRight="true"
+                android:src="@drawable/close_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/base_line_color"/>
+
+
+        <ListView
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/lv_guess_toast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_notinchina_main"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_cancle_toast_price"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="14sp"
+                android:textColor="@color/coment_black_99"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:textSize="15sp"
+                android:id="@+id/tv_go_toast_price"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
+                android:text="确定"
+                android:gravity="center"
+                android:background="@drawable/yellow_right_bottom_bg"
+                android:textColor="@color/coment_black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

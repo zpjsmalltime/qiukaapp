@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ScroeDetailActivity">
+    <include layout="@layout/select_score_title_layout"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    >
+    <FrameLayout
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <com.mayisports.qca.view.NestingListViewInScrollView
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:id="@+id/lv_select_score_ac"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+        </ScrollView>
+    <com.mayisports.qca.view.NestingGridViewInScrollView
+        android:background="@color/white"
+        android:padding="20dp"
+        android:verticalSpacing="10dp"
+        android:visibility="gone"
+        android:numColumns="3"
+        android:horizontalSpacing="10dp"
+        android:id="@+id/gv_select_score_ac"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    </FrameLayout>
+    <View
+        android:background="@color/stand_split_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColor="@color/coment_black"
+            android:text="已选"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_num_select_score"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="#FF5B06"
+            android:text="5"
+            android:textSize="14sp"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_all_select_score"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/select_score_bottom"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/coment_black"
+            android:text="全选"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_no_select_score"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/select_score_bottom"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/coment_black"
+            android:text="全不选"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_one_select_score"
+            android:visibility="gone"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/select_score_bottom"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/coment_black"
+            android:text="一级"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
+
+        <include layout="@layout/loadinglayout"/>
+    </FrameLayout>
+</LinearLayout>

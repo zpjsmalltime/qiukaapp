@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutMeActivity">
+   <ImageView
+       android:layout_marginTop="30dp"
+       android:layout_gravity="center_horizontal"
+       android:src="@drawable/icon_logo"
+       android:layout_width="80dp"
+       android:layout_height="80dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="球咖体育"
+        android:textSize="20sp"
+        android:textColor="@color/coment_black"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="right"
+            android:textColor="@color/coment_black"
+            android:text="产品介绍"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:text="球咖APP致力于成为球迷心中最优质的体育社区"
+            android:gravity="right"
+            android:textColor="@color/coment_black_99"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="right"
+            android:textColor="@color/coment_black"
+            android:text="客服微信"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:text="mayisports"
+            android:gravity="right"
+            android:textColor="@color/coment_black_99"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:gravity="right"
+            android:text="商业合作"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:text="market@qiuka.tv"
+            android:gravity="right"
+            android:textColor="@color/coment_black_99"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_weight="1"
+        android:layout_width="1dp"
+        android:layout_height="0dp"/>
+    <TextView
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="版权归北京瑞赢创科信息技术有限公司所有"
+        android:textColor="@color/coment_black_99"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

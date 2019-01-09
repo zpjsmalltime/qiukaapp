@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+
+        android:textColor="#666666"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text=" "
+        android:id="@+id/tv_right_top"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="45dp"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+</FrameLayout>

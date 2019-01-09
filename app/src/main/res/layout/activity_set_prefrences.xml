@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+<LinearLayout   android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <CheckBox
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:checked="true"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:drawableTop="@drawable/football_select"
+            android:button="@null"
+            android:text="足球"
+            android:id="@+id/cb_football_set_prefrences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:drawableTop="@drawable/lottery_select"
+            android:button="@null"
+            android:text="篮球"
+            android:id="@+id/cb_lottery_set_prefrences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_submit_set_prefrences"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/coment_black"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="50dp"
+        android:text="请选择您的喜好"
+        android:textColor="@color/black_46"
+        android:textSize="29sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/iv_back"
+        android:src="@drawable/gray_left_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/loadinglayout"/>
+</RelativeLayout>

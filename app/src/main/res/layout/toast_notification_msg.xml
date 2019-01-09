@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black_50_alpha"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginRight="100dp"
+        android:id="@+id/top"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_shape_stroke">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/notification_top"
+            android:text=""
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:textColor="@color/coment_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_cancle"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/search_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <FrameLayout
+            android:background="@drawable/white_bottom_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/shape_yellow_cricel"
+            android:id="@+id/tv_ok_toast_msg"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:text="立即开启"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="@color/black_28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

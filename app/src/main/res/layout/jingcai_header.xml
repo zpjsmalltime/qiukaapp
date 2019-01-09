@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:background="@color/white_"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/coment_gray_bg"/>
+    <ImageView
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:id="@+id/iv_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/coment_gray_bg"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_0_jingcai_header"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity=""
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/header_1"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="发推荐"
+                android:textColor="@color/black_28"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+        <View android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_line_color"/>
+        <FrameLayout
+            android:id="@+id/fl_1_jingcai_header"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/header_2"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="我的推荐"
+                android:textColor="@color/black_28"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+        <View android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_line_color"/>
+        <FrameLayout
+            android:id="@+id/fl_2_jingcai_header"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/header_3"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="已购推荐"
+                android:textColor="@color/black_28"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+        <View android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_line_color"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/base_line_color"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_3_jingcai_header"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/header_4"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="情报站"
+                android:textColor="@color/black_28"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+        <View android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_line_color"/>
+        <FrameLayout
+            android:id="@+id/fl_4_jingcai_header"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/header_5"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="智能选球"
+                android:textColor="@color/black_28"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+        <View android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_line_color"/>
+        <FrameLayout
+            android:id="@+id/fl_5_jingcai_header"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/header_6"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="红人榜"
+                android:textColor="@color/black_28"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+        <View android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_line_color"/>
+
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:background="@color/coment_gray_bg"/>
+</LinearLayout>

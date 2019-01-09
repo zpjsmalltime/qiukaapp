@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_content_personal"
+        android:text="步骤3：在manfest中修改theme，supportsRtl。题等。删除supportsRtl属性。"
+        android:textColor="@color/coment_black"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/gray_shape"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_team_name_personal"
+                android:text="马赛 vs 日本"
+                android:textSize="14sp"
+                android:textColor="@color/coment_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+          <LinearLayout
+              android:gravity="center_vertical"
+              android:layout_marginTop="10dp"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_bottom_persoanal"
+
+                android:text="欧罗巴杯·明12:00·185字"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+              <TextView
+                  android:layout_marginLeft="10dp"
+                  android:textColor="#464646"
+                  android:textSize="9sp"
+                  android:paddingLeft="2dp"
+                  android:paddingRight="2dp"
+                  android:text="已购"
+                  android:id="@+id/tv_buy"
+                  android:layout_gravity="center_vertical"
+                  android:background="@drawable/live_shape"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+          </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right|center_vertical"
+            android:id="@+id/iv_result_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/ll_price"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:orientation="vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/price_shape"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_type_personal"
+                android:textColor="@color/red_"
+                android:padding="3dp"
+                android:text="欧盘"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price_match_item"
+                android:textColor="@color/white"
+                android:text="28金币"
+                android:padding="3dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_right_item"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/score_gray_top_title"
+            android:drawableRight="@drawable/arrow_right"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

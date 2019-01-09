@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coment_gray_bg"
+    tools:context=".activity.PersonalDetailActivity">
+
+
+    <include layout="@layout/peronal_title"/>
+
+
+    <com.mayisports.qca.view.InterceptEventViewGroup
+        android:id="@+id/ievg"
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.andview.refreshview.XRefreshView
+
+        android:id="@+id/xfv_personal_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+
+            android:scrollbars="none"
+            android:dividerHeight="0dp"
+            android:divider="@color/coment_gray_bg"
+            android:id="@+id/lv_personal_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.andview.refreshview.XRefreshView>
+
+
+
+
+
+
+
+        <!--<RelativeLayout-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="gone"-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:id="@+id/rl_load_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ProgressBar-->
+                <!--android:id="@+id/pb_load"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:indeterminateDrawable="@drawable/progressbar"/>-->
+
+            <!--<TextView-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/tv_reload"-->
+                <!--android:gravity="center"-->
+                <!--android:text="加载失败点击重试"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+        <!--</RelativeLayout>-->
+
+        <include layout="@layout/net_error_layout"/>
+        <include layout="@layout/loadinglayout_nobg"/>
+
+
+
+        <RelativeLayout
+            android:alpha="0"
+            android:background="#272B2E"
+            android:paddingTop="25dp"
+            android:id="@+id/rl_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:visibility="invisible"
+                android:padding="10dp"
+                android:src="@drawable/back_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/dot_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/transparent"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_back"
+                android:padding="10dp"
+                android:src="@drawable/back_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_name_title"
+                android:text=""
+                android:textColor="@color/white_"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_dot_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/dot_more" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </com.mayisports.qca.view.InterceptEventViewGroup>
+</LinearLayout>

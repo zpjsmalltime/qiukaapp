@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_content_type_bottom"
+    android:gravity="center_vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:background="@color/white_"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_comments_content_type"
+        android:textColor="@color/black_B3B4B9"
+        android:textSize="16sp"
+        android:text="说说你的观点吧..."
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/gray_shape"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_com_count_content_type"
+        android:layout_marginLeft="5dp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/iv1"
+           android:padding="10dp"
+            android:src="@drawable/article_comment_icon"
+            android:textSize="16sp"
+            android:textColor="@color/coment_black"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <View android:layout_width="1dp"
+            android:id="@+id/v_1"
+            android:layout_centerInParent="true"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/v_1"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:background="@color/white_"
+            android:id="@+id/tv_com_count"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/red_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_collect_content_type"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/article_collection_icon_uncheck"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

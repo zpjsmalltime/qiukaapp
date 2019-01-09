@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_bg_banner"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic_dauflt_img"
+        android:layout_width="match_parent"
+        android:layout_height="105dp" />
+    <com.youth.banner.Banner
+        android:visibility="gone"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"/>
+</FrameLayout>

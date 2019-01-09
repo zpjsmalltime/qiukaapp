@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mayisports.qca.view.MyRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer"
+    tools:context="com.mayi.mayisports.activity.VideoPlayerActivity">
+
+
+        <com.mayisports.qca.view.VerticalViewPager
+            android:id="@+id/vp_video_player_ac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.mayisports.qca.view.MyFrameLayoutVideo
+            android:clickable="true"
+            android:background="@color/white_"
+            android:id="@+id/fl_right_video_player_ac"
+            android:layout_gravity="right"
+            android:tag="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+        <ProgressBar
+            android:layout_alignParentBottom="true"
+            android:progress="50"
+            android:visibility="gone"
+            android:id="@+id/progress_volume_ac"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_color_volume" />
+</com.mayisports.qca.view.MyRelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_50_alpha">#55000000</color>
+    <color name="black_30_alpha">#66000000</color>
+    <color name="black_20_alpha">#33000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_">#FEFEFF</color>
+    <color name="white_50">#66efefef</color>
+    <color name="white_60_alpha">#55ffffff</color>
+    <color name="white_80_alpha">#bbffffff</color>
+    <!--    <color name="gray">#22666666</color>-->
+    <color name="transparent">#00000000</color>
+    <!--<color name="background_color">#EFEFF4</color>-->
+
+    <!--<color name="bg_gray">#ededed</color>-->
+    <color name="black3">#333333</color>
+    <color name="black_75_alpha">#cc000000</color>
+
+    <color name="stand_bg_color">#F4F4F4</color>
+    <color name="stand_split_line_color">#F0F0F0</color>
+
+
+    <!--  新色值-->
+    <!-- 主界面底部 按钮 字体颜色-->
+    <color name="main_bottom_text">@color/coment_black</color>
+    <color name="score_gray_top_title">#999999</color>
+    <color name="score_black_top_title">#000000</color>
+    <color name="score_top_title_line">#FDDB45</color>
+    <color name="socre_top_item">#282828</color>
+    <color name="socre_top_uncheck_item">#666666</color>
+
+    <!--<color name="coment_black">#121212</color>-->
+    <color name="coment_black">#1b1b1b</color>
+
+    <color name="coment_gray_bg">#EFF0F4</color>
+    <color name="coment_black_99">#999999</color>
+    <color name="base_line_color">#ffdddddd</color>
+    <color name="black_66">#666666</color>
+    <color name="black_28">#393939</color>
+    <color name="black_22">#222222</color>
+    <color name="black_dd">#dddddd</color>
+    <color name="red_">#f96268</color>
+    <color name="black_46">#464646</color>
+    <color name="coment_alpha_gray_bg">#e6F2F2F2</color>
+    <color name="yellow">#FFD41D</color>
+    <color name="green">#12A545</color>
+    <color name="black_bf">#bfbfbf</color>
+    <color name="blue">#62AFEF</color>
+    <color name="yellow_small">#FFFAE6</color>
+    <color name="black_B3B4B9">#B3B4B9</color>
+    <color name="blue_5593E6">#5593E6</color>
+    <color name="black_e8">#e8e8e8</color>
+    <color name="gray_b3b4b9">#b3b4b9</color>
+    <color name="gray_e1">#e1e1e1</color>
+    <color name="black_76">#767676</color>
+    <color name="main_bottom_text_uncheck" >@color/black_76</color>
+
+
+</resources>

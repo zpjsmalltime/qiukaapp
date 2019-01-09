@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:background="#f2f2f2"
+        android:text="首发阵容"
+        android:textColor="@color/black_28"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>

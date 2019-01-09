@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_type_pan"
+                android:text="亚盘"
+                android:textColor="@color/coment_black"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_title_pan"
+                android:layout_marginLeft="15dp"
+                android:text="猜两队90分进球数"
+                android:textColor="#BFBFBF"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/ll_result_pan"
+                android:orientation="horizontal"
+                android:background="@drawable/fangandan_2_left"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_left"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:textSize="13sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/coment_black"
+                    android:text="赛事"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_m"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:textSize="13sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/coment_black"
+                    android:text="赛事"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:textSize="13sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/coment_black"
+                    android:text="受1球   1.88"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+</LinearLayout>
+    <ImageView
+        android:rotation="-30"
+        android:visibility="gone"
+        android:src="@drawable/fail_result"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_result_pan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

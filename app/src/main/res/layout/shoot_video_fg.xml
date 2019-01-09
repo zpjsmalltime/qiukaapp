@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/net_error_layout"/>
+
+    <include layout="@layout/base_title_layout"/>
+    <View android:layout_width="match_parent"
+        android:id="@+id/v"
+        android:background="#272B2E"
+        android:layout_height="0.11dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <com.andview.refreshview.XRefreshView
+            android:background="@color/coment_gray_bg"
+            android:id="@+id/xfv_home_fg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.mayisports.qca.view.HeaderGridView
+                android:scrollbars="none"
+                android:numColumns="2"
+                android:id="@+id/lv_home_fg"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.andview.refreshview.XRefreshView>
+        <LinearLayout
+
+            android:background="@color/white"
+            android:visibility="gone"
+            android:id="@+id/ll_no_data"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:src="@drawable/no_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="暂无视频"
+                android:textSize="12sp"
+                android:textColor="@color/coment_black_99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:visibility="gone"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/yellow"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="@color/coment_black"
+            app:tabTextAppearance="@style/TabText"
+            app:tabTextColor="@color/coment_black_99"
+            android:id="@+id/tl_top_bar"
+            app:tabMinWidth="30dp"
+            android:animateLayoutChanges="false"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <include layout="@layout/loadinglayout"/>
+
+    </FrameLayout>
+</LinearLayout>

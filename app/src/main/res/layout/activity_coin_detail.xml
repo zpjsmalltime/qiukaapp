@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="可用金币"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_balance_coin"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/coin_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="60"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="可提现金币"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_coin"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/coin_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_withdraw_btn_coin"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/select_score_bottom"
+            android:drawablePadding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现"
+            android:textColor="@color/coment_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="充值金额"
+        android:textColor="@color/coment_black"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/gv_coin"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="支付方式"
+        android:textColor="@color/coment_black"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:src="@drawable/wechatpay_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="可提现金币"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信支付"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:id="@+id/iv_wepay_coin"
+            android:padding="10dp"
+            android:src="@drawable/choose_uncheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/coment_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:src="@drawable/alipay_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="可提现金币"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝充值"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:id="@+id/iv_alipay_coin"
+            android:padding="10dp"
+            android:src="@drawable/choose_uncheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/coment_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_topup_coin"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:layout_marginTop="25sp"
+        android:gravity="center"
+        android:text="立即充值"
+        android:background="@drawable/select_score_bottom"
+        android:textColor="@color/coment_black"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_toast_coin"
+       android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="充值金币仅用于球咖内部消费，不可提现；\n如充值遇到问题，可联系客服微信：mayisports"
+        android:textColor="@color/coment_black_99"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

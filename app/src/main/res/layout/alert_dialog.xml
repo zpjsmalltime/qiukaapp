@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+
+        android:background="@color/white"
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_share_title__"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="分享给好友"
+            android:textColor="@color/coment_black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:visibility="gone"
+            android:background="@color/white"
+            android:id="@+id/rg_share_fg"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_0_share_fg"
+                android:textSize="@dimen/rb_text_size"
+                android:textColor="@color/coment_black_99"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/weibo_icon"
+                android:button="@null"
+                android:gravity="center"
+                android:text="微博"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rb_1_share_fg"
+                android:textSize="@dimen/rb_text_size"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/qq_icon"
+                android:textColor="@color/coment_black_99"
+                android:button="@null"
+                android:gravity="center"
+                android:text="QQ"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rb_2_share_fg"
+                android:textSize="@dimen/rb_text_size"
+                android:drawablePadding="5dp"
+                android:textColor="@color/coment_black_99"
+                android:button="@null"
+                android:drawableTop="@drawable/qq_circle"
+                android:gravity="center"
+                android:text="QQ空间"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rb_3_share_fg"
+                android:textSize="@dimen/rb_text_size"
+                android:drawablePadding="5dp"
+                android:textColor="@color/coment_black_99"
+                android:button="@null"
+                android:drawableTop="@drawable/wechat_icon"
+                android:gravity="center"
+                android:text="微信"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_4_share_fg"
+                android:textSize="@dimen/rb_text_size"
+                android:drawablePadding="5dp"
+                android:textColor="@color/coment_black_99"
+                android:button="@null"
+                android:drawableTop="@drawable/wechat_circle"
+                android:gravity="center"
+                android:text="朋友圈"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/base_line_color"/>
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/btn_share_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            android:textSize="14sp"
+            android:textColor="@color/black_46"
+            />
+        <TextView
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/btn_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="收藏"
+            android:textSize="14sp"
+            android:textColor="@color/black_46"
+            />
+
+         <View android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/base_line_color"/>
+        <TextView
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="举报"
+            android:textSize="14sp"
+            android:textColor="@color/black_46"
+
+            />
+
+        <View android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/coment_gray_bg"/>
+
+        <TextView
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="14sp"
+            android:textColor="@color/black_46"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

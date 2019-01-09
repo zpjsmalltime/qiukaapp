@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_create_item_sys_msg"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text=""
+        android:background="@drawable/shape_black_20"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_shape_stroke">
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/tv_type_sys_msg"
+           android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="新评论通知"
+            android:textColor="@color/coment_black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_content_sys_msg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="新评论通知"
+            android:textColor="@color/black_28"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/base_line_color"/>
+        <LinearLayout
+            android:id="@+id/ll_click_sys_msg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tv_cancle_toast_price"
+                android:padding="10dp"
+                android:text="点击前往"
+                android:textSize="14sp"
+                android:textColor="@color/coment_black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

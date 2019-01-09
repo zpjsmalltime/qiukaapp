@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/coment_gray_bg"
+    android:padding="10dp"
+    android:clickable="true"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_width="55dp"
+        android:layout_height="55dp">
+        <ImageView
+            android:id="@+id/iv_header_item"
+            android:layout_width="55dp"
+            android:layout_height="55dp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_vip_item"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/vip_coin"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/coment_black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_reason_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="name"
+            android:textColor="@color/coment_black_99"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="invisible"
+        android:src="@drawable/choose_check"
+        android:id="@+id/iv_follow_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:padding="10dp"
+        />
+</LinearLayout>

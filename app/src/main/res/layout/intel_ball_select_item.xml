@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title_ball_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多特蒙德"
+                android:textColor="@color/black_28"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_tag_ball_item"
+                android:background="@drawable/shape_ball_red_stroke"
+                android:layout_marginLeft="6dp"
+                android:paddingLeft="4.5dp"
+                android:paddingRight="4.5dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="超历史"
+                android:textColor="@color/red_"
+                android:textSize="11sp"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_time_ball_item"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="英超 11-02 02:30"
+            android:textColor="@color/coment_black_99"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_team_ball_item"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阿森纳 3 皇家马德里"
+            android:textColor="@color/coment_black_99"
+            android:textSize="12sp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_0_ball_item"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_0_top_ball_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textColor="@color/red_"
+            android:textSize="29sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_0_bottom_ball_item"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连赢"
+            android:textColor="#fff96268"
+            android:textSize="11sp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line_ball_item"
+        android:layout_width="0.5dp"
+        android:background="@color/black_dd"
+        android:layout_height="41dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_1_ball_item"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_1_top_ball_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textColor="@color/red_"
+            android:textSize="29sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_1_bottom_ball_item"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连赢"
+            android:textColor="#fff96268"
+            android:textSize="11sp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

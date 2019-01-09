@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:background="@color/black_66"
+    android:orientation="vertical"
+    android:layout_marginBottom="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_head_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/v_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+        <View
+            android:id="@+id/v_cover"
+            android:background="#55000000"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_top_"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <RelativeLayout
+         android:layout_width="70dp"
+         android:layout_height="70dp">
+        <ImageView
+            android:layout_margin="1dp"
+            android:id="@+id/iv_header_personal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+         <ImageView
+             android:src="@drawable/cricle_round_white"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+         <ImageView
+             android:visibility="gone"
+             android:id="@+id/iv_vip_header"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentBottom="true"
+             android:src="@drawable/vip_coin"
+             android:layout_width="20dp"
+             android:layout_height="20dp" />
+
+
+     </RelativeLayout>
+
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_follow_personal"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/select_score_item"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="关注"
+            android:textColor="@drawable/select_score_text_item"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:clickable="true"
+            android:id="@+id/ll_name_home_item_detail"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_name_personal"
+                android:clickable="true"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:text="昵称"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/ll_tag_container_personal_detail"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:lineSpacingMultiplier="1.1"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="0dp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_jieshao_personal"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="#55ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#55ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_follower_count"
+                android:textColor="@color/white"
+                android:text="0"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/white"
+                android:text="粉丝"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_praise_count"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:text="0"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/white"
+                android:text="获赞"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+          <View
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/tv_go_weibo"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/weibo_icon_new_p"
+                android:textColor="@color/white"
+                android:text="微博主页"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_score_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/tv_groom_personal_detial"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="推荐"
+                android:textColor="@color/score_black_top_title"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_topic_personal_detial"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="话题"
+                android:textColor="@color/score_gray_top_title"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:id="@+id/iv_groom_personal_detial"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@color/score_top_title_line" />
+
+
+            <View
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:id="@+id/iv_topice_personal_detial"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@color/score_top_title_line"
+                android:visibility="invisible" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_count_persoanal_detail"
+        android:textSize="14sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:text=""
+        android:textColor="@color/black_76"
+        android:background="@color/white_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/gray_e1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+    <LinearLayout
+        android:paddingTop="100dp"
+        android:background="@color/coment_gray_bg"
+        android:visibility="gone"
+        android:id="@+id/ll_no_topic"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/no_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+       <TextView
+           android:layout_marginTop="20dp"
+           android:text="暂无动态"
+           android:textSize="12sp"
+           android:textColor="@color/coment_black_99"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

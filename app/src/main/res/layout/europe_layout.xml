@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_europe_edit_groom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_type_pan"
+                android:text="欧盘"
+                android:textColor="@color/coment_black"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_title_pan"
+                android:layout_marginLeft="15dp"
+                android:text="猜两队90分进球数"
+                android:textColor="#BFBFBF"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/ll_europe_edit_groom"
+                android:orientation="horizontal"
+                android:background="@drawable/tuijiandan_empty_3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_left_europe_edit_groom"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:textSize="13sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/coment_black"
+                    android:text="主胜\t\t3.30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/tv_m_europe_edit_groom"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:textSize="13sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/coment_black"
+                    android:text="平局\t\t3.60"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_right_europe_edit_groom"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:textSize="13sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/coment_black"
+                    android:text="客胜\t\t2.03"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

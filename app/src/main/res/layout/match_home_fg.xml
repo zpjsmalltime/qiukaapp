@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/score_title_layout"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_top_title"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="关注"
+        android:textColor="@color/white"
+        android:background="#272B2E"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <android.support.design.widget.TabLayout
+        android:background="#272B2E"
+        app:tabIndicatorColor="@color/transparent"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/coment_black"
+        app:tabTextAppearance="@style/TabTextBigSize"
+        app:tabTextColor="@color/white"
+        android:id="@+id/tl_match_home"
+        app:tabMinWidth="10dp"
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </android.support.design.widget.TabLayout>
+
+    <include layout="@layout/net_error_layout"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_match_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+</LinearLayout>

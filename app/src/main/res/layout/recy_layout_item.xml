@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:orientation="vertical"
+android:background="@color/white"
+android:paddingBottom="10dp"
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+android:layout_height="wrap_content">
+<LinearLayout
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:id="@+id/ll_click_ry_item"
+    android:background="@color/white"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <View
+       android:layout_marginTop="3dp"
+       android:layout_marginBottom="3dp"
+       android:layout_marginRight="6dp"
+       android:background="@drawable/coment_black_shape"
+       android:layout_width="3dp"
+       android:layout_height="match_parent"/>
+   <TextView
+       android:textStyle="bold"
+       android:text="热门话题"
+       android:textColor="@color/coment_black"
+       android:textSize="14sp"
+       android:layout_weight="1"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content" />
+
+</LinearLayout>
+<android.support.v7.widget.RecyclerView
+    android:layout_marginTop="10dp"
+    android:id="@+id/rv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>

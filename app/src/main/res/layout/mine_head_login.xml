@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="登录球咖，畅享体育"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black_28"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/phone_icon_mine"
+            android:id="@+id/iv_phone_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@drawable/weixin_icon_mine"
+            android:id="@+id/iv_weixin_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:src="@drawable/weibo_icon_mine"
+            android:id="@+id/iv_weibo_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/qq_icon_phone"
+            android:id="@+id/iv_qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

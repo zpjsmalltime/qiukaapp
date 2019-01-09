@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black_50_alpha"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/top"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_shape_stroke">
+
+
+        <TextView
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:padding="10dp"
+            android:text="请选择直播来源"
+            android:layout_gravity="center"
+            android:textColor="@color/black_75_alpha"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/base_line_color"/>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="提示信息"
+            android:layout_gravity="center"
+            android:textColor="@color/coment_black"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/base_line_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="提示信息"
+                android:layout_gravity="center"
+                android:textColor="@color/coment_black"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/base_line_color"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:text="提示信息"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/coment_black"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/base_line_color"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:text="提示信息"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/coment_black"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/base_line_color"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:text="提示信息"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/coment_black"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/base_line_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:text="提示信息"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/coment_black"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/base_line_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_notinchina_main"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_cancle_toast_price"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="14sp"
+                android:textColor="@color/coment_black_99"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:textSize="15sp"
+                android:id="@+id/tv_go_toast_price"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
+                android:text="确定"
+                android:gravity="center"
+                android:background="@drawable/yellow_right_bottom_bg"
+                android:textColor="@color/coment_black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/coment_gray_bg"
+    android:layout_height="match_parent"
+    tools:context=".activity.PublishSuccessGroomActivity">
+
+    <ImageView
+        android:paddingTop="40dp"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/publish_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:text="发布成功"
+        android:textColor="@color/coment_black"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_coin_ming_fg"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:gravity="right"
+            android:textColor="@color/coment_black"
+            android:text="推荐比赛"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_match_name_publish_success"
+            android:gravity="right"
+            android:textColor="@color/coment_black_99"
+            android:text="余额：0 "
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/base_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:gravity="right"
+            android:textColor="@color/coment_black"
+            android:text="推荐内容"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_content_publish_success"
+            android:gravity="right"
+            android:textColor="@color/coment_black_99"
+            android:text="余额：0 "
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/base_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:gravity="right"
+            android:textColor="@color/coment_black"
+            android:text="推荐价格"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_price_publish_success"
+            android:gravity="right"
+            android:textColor="@color/coment_black_99"
+            android:text="余额：0 "
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

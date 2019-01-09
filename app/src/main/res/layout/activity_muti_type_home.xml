@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MutiTypeHomeActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.andview.refreshview.XRefreshView
+        android:background="@color/coment_gray_bg"
+        android:id="@+id/xfv_home_fg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:scrollbars="none"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:id="@+id/lv_home_fg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.andview.refreshview.XRefreshView>
+    </FrameLayout>
+</LinearLayout>

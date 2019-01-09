@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PublishPointActivity">
+
+  <ListView
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:scrollbars="none"
+      android:dividerHeight="0dp"
+      android:divider="@null"
+      android:id="@+id/lv_publish_point"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="0dp"/>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:background="#EFF0F4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_marginRight="25dp"
+            android:id="@+id/iv_link_topic"
+            android:src="@drawable/bottom_topic_icon"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+
+            android:visibility="invisible"
+            android:src="@drawable/bottom_expression_icon"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <TextView
+
+            android:id="@+id/tv_text_limit_count"
+            android:text="140"
+            android:textSize="14sp"
+            android:textColor="#767676"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <include layout="@layout/loadinglayout_nobg"/>
+</FrameLayout>

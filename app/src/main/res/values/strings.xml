@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">球咖</string>
+
+    <!--主界面底部导航-->
+    <string name="score_main_ac">赛事</string>
+    <string name="square_main_ac">关注</string>
+    <string name="live_main_ac">球咖</string>
+    <string name="mine_main_ac">我</string>
+    <string name="immediate_score_fg">即时</string>
+    <string name="result_score_fg">赛果</string>
+    <string name="process_score_fg">赛程</string>
+    <string name="focus_score_fg">关注</string>
+    <string name="rule">1.大赛每周一期,从每周一13点开始,至次周一13点领奖;\n2.每周竞猜达到15场,即可分享总奖金,奖金依照排名顺序分配;\n3.排名根据大赛周期内竞猜场次的总回报率由高到低排序;\n4.因大部分咖友到周末才能完成15场竞猜,为了让榜单展示更有意义,周二优先排名达到5场的咖友,周三9场,周四12场,周五15场;\n5.回报率 = 每场球的回报赔率和 / 总场数 X 100%</string>
+    <string name="bind_phone_text">根据相关法规政策，发布内容需绑定手机号，请前往\"我-我的资料\"页绑定手机号。</string>
+
+
+    <!-- MutilImage_select -->
+    <!-- MutilImage_select -->
+
+
+    <!--  MutilImage_select -->
+
+</resources>

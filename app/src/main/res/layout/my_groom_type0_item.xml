@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_weight="1"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/tv_match_type_item"
+             android:textColor="@color/coment_black_99"
+             android:textSize="12sp"
+             android:text="德意"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:id="@+id/tv_day_item"
+             android:layout_marginTop="5dp"
+             android:textColor="@color/coment_black_99"
+             android:textSize="10sp"
+             android:text="02-06"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:id="@+id/tv_time_item"
+             android:textColor="@color/coment_black_99"
+             android:textSize="10sp"
+             android:text="03:30"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_host_name_item"
+                android:text="主队"
+                android:textColor="@color/black_28"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_vs_score_item"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="1:1"
+                android:textSize="15sp"
+                android:textColor="@color/red_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_away_name_item"
+                android:text="客队"
+                android:textColor="@color/black_28"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_handpic_type_item"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:background="@drawable/shape_ball_red_stroke"
+                android:text="亚盘"
+                android:textColor="@color/red_"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_name_tape_item"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="主队名，受半球"
+                android:textSize="12sp"
+                android:textColor="@color/black_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+           <TextView
+            android:id="@+id/tv_tape_item"
+            android:text="0.95"
+            android:textSize="12sp"
+            android:textColor="@color/coment_black_99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="0.5dp"
+        android:background="@color/base_line_color"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_status_item"
+            android:textColor="@color/coment_black_99"
+            android:textSize="14sp"
+            android:text="未完赛"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_result_item"
+            android:layout_gravity="center"
+            android:src="@drawable/ying_reslult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:background="#F9F8F7"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_price_item"
+            android:textColor="@color/coment_black_99"
+            android:text="单价:0"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+   <LinearLayout
+       android:layout_weight="5"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/tv_sale_count_item"
+           android:textColor="@color/coment_black_99"
+           android:text="销量：0"
+           android:textSize="12sp"
+           android:layout_width="65dp"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/tv_revenue_item"
+           android:textColor="@color/coment_black_99"
+           android:text="收益：0"
+           android:textSize="12sp"
+           android:layout_width="65dp"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/tv_view_count_item"
+           android:textColor="@color/coment_black_99"
+           android:text="阅读：0"
+           android:textSize="12sp"
+           android:layout_width="65dp"
+           android:layout_height="wrap_content" />
+
+
+   </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

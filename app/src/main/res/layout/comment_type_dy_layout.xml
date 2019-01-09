@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/ll_comment_type"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp"
+    android:orientation="vertical"
+    android:background="@drawable/gray_shape"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:lineSpacingMultiplier="1.2"
+        android:id="@+id/tv_content_comment_type_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="content"
+        android:textColor="@color/coment_black"
+        android:textSize="16sp" />
+
+    <com.mayisports.qca.view.NestingGridViewInScrollView
+        android:layout_marginTop="10dp"
+        android:id="@+id/gv_comment_type_item"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_video_hot_reply_item"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_video_hot_reply_item"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="175dp" />
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@drawable/play_video_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>

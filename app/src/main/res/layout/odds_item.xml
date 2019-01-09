@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white_"
+    android:clickable="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/ll_europe_edit_groom"
+        android:orientation="horizontal"
+        android:background="@drawable/tuijiandan_empty_3"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/tv_left_europe_edit_groom"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black_46"
+            android:text="欧盘"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/tv_m_europe_edit_groom"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black_46"
+            android:text="亚盘"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_right_europe_edit_groom"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black_46"
+            android:text="大小球"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fl_empty"
+        android:clickable="true"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/no_topic"
+            android:textColor="@color/coment_black_99"
+            android:padding="50dp"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_title"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@color/black_dd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="公司"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text=""
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="主胜"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_type_name"
+            android:text="平局"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="客胜"
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=""
+            android:textColor="@color/black_28"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

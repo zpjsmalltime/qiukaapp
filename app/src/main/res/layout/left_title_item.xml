@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_root"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/leftView"
+        android:layout_width="4dp"
+        android:background="@color/yellow"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_left_title"
+        android:gravity="center"
+        android:text="没戏"
+        android:textColor="@color/black_28"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

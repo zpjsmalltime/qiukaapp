@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <LinearLayout
+          android:gravity="center_vertical"
+          android:layout_marginLeft="10dp"
+          android:orientation="horizontal"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/tv_host_count"
+              android:textColor="@color/white_"
+              android:gravity="center"
+              android:background="@drawable/host_player"
+              android:textSize="11sp"
+              android:text="85"
+              android:layout_width="21dp"
+              android:layout_height="18dp" />
+
+          <TextView
+              android:id="@+id/tv_type_host"
+              android:layout_marginLeft="3dp"
+              android:textColor="@color/black_28"
+              android:gravity="center"
+              android:background="@drawable/yellow_card_one"
+              android:textSize="11sp"
+              android:text="首"
+              android:layout_width="21dp"
+              android:layout_height="20dp" />
+
+          <TextView
+              android:id="@+id/tv_host_pname"
+
+              android:layout_marginLeft="3dp"
+              android:text="球员名称"
+              android:textSize="12sp"
+              android:textColor="@color/black_28"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+
+        <LinearLayout
+            android:gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_away_pname"
+                android:layout_marginRight="3dp"
+                android:text="球员名称"
+                android:textSize="12sp"
+                android:textColor="@color/black_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:id="@+id/tv_away_type"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/black_28"
+                android:gravity="center"
+                android:background="@drawable/yellow_card_one"
+                android:textSize="11sp"
+                android:text="首"
+                android:layout_width="21dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/tv_away_count"
+                android:textColor="@color/white_"
+                android:gravity="center"
+                android:background="@drawable/away_player"
+                android:textSize="11sp"
+                android:text="85"
+                android:layout_width="21dp"
+                android:layout_height="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:background="@color/base_line_color"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

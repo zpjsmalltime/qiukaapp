@@ -1,0 +1,62 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:id="@+id/ll_my_personal"
+    android:background="@color/white_"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_personal_titel_header"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp"
+        android:text="我的订阅"
+        android:textSize="16sp"
+        android:textColor="@color/coment_black"
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"/>
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_more_p"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="更多"
+            android:textSize="12sp"
+            android:textColor="@color/black_B3B4B9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/gray_e1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_height="0.5dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/white"
+        android:id="@+id/rv_personal_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:background="@color/coment_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</LinearLayout>
+</FrameLayout>

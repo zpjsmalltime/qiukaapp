@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"/>
+
+    <android.support.design.widget.TabLayout
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/yellow"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/coment_black"
+        app:tabTextAppearance="@style/TabText"
+        app:tabTextColor="@color/coment_black_99"
+        android:id="@+id/tl_match_home"
+        app:tabMinWidth="30dp"
+        android:animateLayoutChanges="false"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    </android.support.design.widget.TabLayout>
+</LinearLayout>
